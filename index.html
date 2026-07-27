@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAKISTAN BEAUTY | PAKPATTAN - IT'S NAFAY DEV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- MAIN NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- ANIMATED HAZRAT BABA FARID LOGO -->
+            <div class="logo-wrapper">
+                <svg class="baba-farid-svg-logo" viewBox="0 0 100 100">
+                    <circle class="gold-halo" cx="50" cy="50" r="46"/>
+                    <!-- Dome Structure -->
+                    <path class="shrine-dome" d="M 28 58 Q 50 15 72 58 Z" />
+                    <!-- Minaret Accents -->
+                    <rect class="gold-minaret" x="22" y="40" width="6" height="30" rx="3" />
+                    <rect class="gold-minaret" x="72" y="40" width="6" height="30" rx="3" />
+                    <!-- Crescent & Star -->
+                    <path class="crescent-star" d="M 50 20 A 4 4 0 1 0 53 23 A 5 5 0 1 1 50 20 Z" />
+                    <!-- Base Foundation -->
+                    <rect class="shrine-base" x="20" y="68" width="60" height="8" rx="2" />
+                </svg>
+                <div class="logo-text">
+                    <span class="brand-sub">DEVELOPED BY</span>
+                    <span class="brand-title">IT'S NAFAY DEV</span>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">Heritage</a>
+                <a href="#attractions">Spots</a>
+                <a href="#gallery">Gallery</a>
+            </nav>
+
+            <button id="btn-sound-toggle" class="sound-chip">
+                <i class="fas fa-music"></i> <span id="sound-status">Ambient Sound: OFF</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge-gold">PAKISTAN BEAUTY</span>
+            <h1>THE BEAUTY OF PAKPATTAN</h1>
+            <p class="hero-subtitle">Exploring the city of Sufi heritage, timeless peace, and rich cultural traditions.</p>
+
+            <div class="hero-actions">
+                <a href="#attractions" class="btn-primary">Explore Landmarks</a>
+                <a href="#about" class="btn-secondary">Learn History</a>
+            </div>
+        </div>
+
+        <div class="hero-credits">
+            <span>Project By <b>Malik Nafay</b> | IT'S NAFAY DEV</span>
+        </div>
+    </section>
+
+    <!-- HERITAGE & HISTORY SECTION -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">SPIRITUAL CAPITAL</span>
+                <h2>The Legacy of Pakpattan</h2>
+                <div class="gold-divider"></div>
+            </div>
+
+            <div class="heritage-grid">
+                <div class="heritage-card">
+                    <div class="card-icon"><i class="fas fa-mosque"></i></div>
+                    <h3>Hazrat Baba Farid (R.A)</h3>
+                    <p>Pakpattan is renowned worldwide for the shrine of the great Sufi poet Hazrat Baba Fariduddin Ganjshakar (R.A), attracting millions seeking peace and spiritual solace.</p>
+                </div>
+
+                <div class="heritage-card">
+                    <div class="card-icon"><i class="fas fa-archway"></i></div>
+                    <h3>Historic Gates</h3>
+                    <p>The city's historic entrances, including the famous Farid Gate, showcase classic architecture connecting ancient trade routes with modern culture.</p>
+                </div>
+
+                <div class="heritage-card">
+                    <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Natural Beauty</h3>
+                    <p>Flanked near the Sutlej River basin, the surrounding lush green fields and agricultural beauty highlight the natural charm of Punjab.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE ATTRACTIONS SHOWCASE -->
+    <section id="attractions" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">KEY SPOTS</span>
+                <h2>Famous Landmarks</h2>
+                <div class="gold-divider"></div>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Spots</button>
+                <button class="filter-btn" data-filter="spiritual">Spiritual</button>
+                <button class="filter-btn" data-filter="historical">Historical</button>
+                <button class="filter-btn" data-filter="nature">Nature & Food</button>
+            </div>
+
+            <div class="spots-grid">
+                <div class="spot-card" data-category="spiritual">
+                    <div class="spot-img" style="background-image: url('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="spot-info">
+                        <span class="spot-tag">Spiritual</span>
+                        <h3>Darbar Hazrat Baba Farid</h3>
+                        <p>The central spiritual hub of Pakpattan, world-famous for Sufi music, Qawwali, and historic gatherings.</p>
+                    </div>
+                </div>
+
+                <div class="spot-card" data-category="historical">
+                    <div class="spot-img" style="background-image: url('https://images.unsplash.com/photo-1590076175571-4b5459efb08c?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="spot-info">
+                        <span class="spot-tag">Historical</span>
+                        <h3>Farid Gate Pakpattan</h3>
+                        <p>One of the oldest surviving historical city gates, serving as a bustling gateway to the traditional markets.</p>
+                    </div>
+                </div>
+
+                <div class="spot-card" data-category="nature">
+                    <div class="spot-img" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="spot-info">
+                        <span class="spot-tag">Nature</span>
+                        <h3>Sutlej River Plains</h3>
+                        <p>Scenic green landscapes and fertile plains along the Sutlej River belt surrounding Pakpattan District.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>PAKISTAN BEAUTY : PAKPATTAN</h2>
+                <p>Designed and Built with Pride by <b>Malik Nafay</b></p>
+            </div>
+            <div class="company-tag">
+                <span>POWERED BY</span>
+                <h3>IT'S NAFAY DEV</h3>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 IT'S NAFAY DEV. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Audio Element -->
+    <audio id="bg-audio" loop src="https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
